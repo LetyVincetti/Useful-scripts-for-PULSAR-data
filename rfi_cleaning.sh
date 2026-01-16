@@ -1,5 +1,7 @@
 #!/usr/bin/bash
 
+#iterative cleaning of pulsar folded profile for bad time intervals and rfi
+
 for file in *.ar;
 do
  
