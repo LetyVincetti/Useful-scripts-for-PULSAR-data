@@ -1,6 +1,7 @@
 #!/usr/bin/bash
 
 #path = path to output dir from running mehdi step of the pipeline
+#mehdi pipeline from DM precise measurement from Susarla et al., 2025
 #filename="<pulsar_name>_DMtimeseries.dm"
 
 #print columns of file dm
