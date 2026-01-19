@@ -1,6 +1,11 @@
 #example usage:
 #python3 test_github_mii.py "B0329+54" "03h32m59.4096s" "54d34m43.329s" 53.0914  -7.9133 "/Users/letiziavincetti/Desktop/TCD/project1/general_synoptic/"
-
+'''
+#it needs 3 txt files:
+-pulsar coordinates in the form PSR_NAME RA_hms DEC_dms (see pulsar_coord.txt)
+-time arrays in form PSR_name ['utc format'] (see file time_arrays.txt)
+-jones elements in file in form of results[mjd] = [i elements, one i for each subbands] (see code jones_mii.py)
+'''
 import os
 import matplotlib.pyplot as plt
 import numpy as np
