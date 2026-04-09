@@ -131,6 +131,7 @@ def main():
     y=np.array(y)
 
     fig, fig1 = plt.subplots(3,1, figsize=(5, 10))
+    #Define the frequency bands from the resolution in units of frequency channel set when generating the mii
     for i, sb in enumerate(subband_array):
         freq_sb=100.+(sb*(100./512))-0.5*(100./512)
         fig1[2].plot(x, 1./y[:, i], label=f'Subband {sb}, {freq_sb:.2f} MHz')
