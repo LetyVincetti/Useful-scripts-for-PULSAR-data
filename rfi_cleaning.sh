@@ -1,6 +1,7 @@
 #!/usr/bin/bash
 
 #iterative cleaning of pulsar folded profile for bad time intervals and rfi
+#it calls the iterative_cleaner pipeline from https://github.com/larskuenkel/iterative_cleaner
 
 for file in *.ar;
 do
