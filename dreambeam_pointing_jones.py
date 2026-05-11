@@ -1,10 +1,25 @@
 #Script from Tobia Carozzi's DreamBeam software 
 #Compute the jones factors for a given LOFAR station pointing at a given target for a given amount of time
 
-#example usage: PSRB1508+55 from IE613
+#---------------------------------JONES FACTORS---------------------------------------------------------------
+#as the signal propagates from the source to the observer, corrupting effects act on it and
+#can be represented as linear matrix operation betweem the incoming electric field and the
+#output voltages of an interferometer, such as:
+#                                    v = Je
+#These systematic effects include direction dipendent and indipendent corruptions, such as the antenna gains,
+#the dipole beam, the parallatic angle correction and Faraday rotation.
+#The Hamaker beam model is implemented for the beam correction effects.
+
+#In this script, 2 Jones matrices are taken into account, 
+#the gain and projection effect from celestial to topocentric station frame
+#--------------------------------------------------------------------------------------------------------------
+
+
+#example usage: PSRB1508+55 from IE613.............................................................................................
 
 #python3 pointing_jones.py print tel band stat model date obs_time int_time ra_rad dec_rad freq
 #python3 pointing_jones.py print LOFAR HBA IE613 Hamaker 2025-02-13T11:01:00 82800 3600 3.9681245768097284 0.9691056736093772 150E6
+#...................................................................................................................................
 
 """Model of a LOFAR station. Gets Jones matrix towards a given direction
    and frequency.
